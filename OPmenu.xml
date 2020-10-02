@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menuDocument>
+  <menu>
+    <scriptItem id="create_myramp">
+      <label>Video</label>
+      <scriptPath>$HOME/houdini18.0/packages/Pype/scripts/loadVideo.py</scriptPath>
+    </scriptItem>
+  </menu>
+</menuDocument>

@@ -1,0 +1,11 @@
+{
+    "Average Neighbouring Points": "// Average Neighbouring Points\nint n[] = neighbours(0, @ptnum);\nvector avgP = @P;\n\n// Loops over all elements of n, setting pt\n// to be the value of each element\nforeach (int pt; n)\n{\n    avgP += point(0, \"P\", pt);\n}\n\n// +1 because we included ourself.\navgP /= len(n)+1;\n@P = avgP;\n", 
+    "Color Based on Threshold": "// Color Based on Threshold\nint condition = (@P.x > 0) ? 1 : 0; // short form if() test\n@Cd = set(condition, 0, 0);        // write condition into red color\n", 
+    "Color from Bounding Box": "// Color from Bounding Box\n@Cd = relbbox(0, @P);\n\n", 
+    "Fetch Second Input Cd Attribute": "// Fetch Second Input Cd Attribute\n// Second input used as reference geometry\n// Use prim and @primnum to get a matching primitive attribute.\n@Cd = point(1, \"Cd\", @ptnum);", 
+    "Get Neighbouring Points into Attribute": "// Get Neighbouring Points into Attribute\ni[]@neighbours = neighbours(0, @ptnum);\n\n", 
+    "Nearest Point Distance": "// Nearest Point Distance\n// Second input used for reference geometry\nint closept = nearpoint(1, @P);   // get point number of near point\nvector value = point(1, \"P\", closept);// get position of near point\n@dist = length(@P - value);           // export distance from nearest point\n@Cd = set(@dist, 0, 0);\n\n", 
+    "Point Group on Threshold": "// Point Group on Threshold\nstring group = \"mygroup\";         // group name to add points to\nint condition = (@P.x > 0) ? 1: 0; // short form if() test\nsetpointgroup(geoself(), group, @ptnum, condition);\n@Cd = set( condition, 0, 0);      // color if in group", 
+    "Random Point Color": "// Random Point Color:\nfloat seed = 0.12345; // seed for rand\n@Cd = rand(seed + @ptnum);", 
+    "Simple Noise to Y Position": "// Nearest Point Distance\n// Second input used for reference geometry\nint closept = nearpoint(1, @P);   // get point number of near point\nvector value = point(1, \"P\", closept);// get position of near point\n@dist = length(@P - value);           // export distance from nearest point\n@Cd = set(@dist, 0, 0);\n\n"
+}
