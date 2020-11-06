@@ -2,7 +2,7 @@
     "path" : 
     [
         {
-            "value" : "J:/HOU/houdini18.0/packages/Pype",
+            "value" : "$HOUDINI_PACKAGE_PATH/Pype",
             "method" : "append"
         }
     ]
