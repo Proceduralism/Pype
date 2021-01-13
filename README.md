@@ -1,6 +1,7 @@
 **Tools**
 ```
 HDA/ROP/TD_Geometry
+HDA/ROP/TD_Mantra 
 HDA/SOP/TD_File
 HDA/OBJ/TD_Globals
 HDA/DOP/TD_VolumeSharp
