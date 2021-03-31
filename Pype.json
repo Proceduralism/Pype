@@ -1,0 +1,9 @@
+{
+    "path" : 
+    [
+        {
+            "value" : "$HOUDINI_PACKAGE_PATH/Pype",
+            "method" : "append"
+        }
+    ]
+}
